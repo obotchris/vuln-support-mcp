@@ -56,8 +56,9 @@ no local build needed.
 In Obot: **Add Server → runtime `Container`**, image `ghcr.io/obotchris/vuln-support-mcp:latest`,
 **port `8000`**, **path `/mcp`** — exactly like the `pii-local` step in the dev-summit scenarios.
 
-> **Note:** the GHCR package is created as *private* by default. Make it **public** (Package settings →
-> Change visibility) so Obot instances can pull it without registry credentials.
+> **Note:** the `ghcr.io/obotchris/vuln-support-mcp` package is **public**, so Obot instances pull it
+> without registry credentials. If you fork this under a different owner, set the package visibility to
+> public (Package settings → Change visibility) after the first build.
 
 ### Manual build (optional)
 
